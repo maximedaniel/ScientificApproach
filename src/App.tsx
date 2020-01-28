@@ -12,6 +12,7 @@ import TrizWindowsMatrix from './components/TrizWindowsMatrix'
 import SixThinkingHatsGraph from './components/SixThinkingHatsGraph'
 import WhysGraph from './components/WhysGraph'
 import BioStatGvMatrix from './components/BioStatGvMatrix'
+import TheoryCKGraph from './components/TheoryCKGraph'
 import {ParentSize} from '@vx/responsive'
 
 interface Props{
@@ -148,7 +149,26 @@ class App extends  Component<Props, State> {
                     </Card.Content>
                   </Card>      
           </Grid.Column>
-          
+          <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
+                <Card fluid>
+                    <Card.Content>
+                      <Card.Header>C-K Theory
+                      </Card.Header>
+                      <Card.Meta>A. Hatchuel and B. Weil (2003)</Card.Meta>
+                      <Card.Description>
+                      <ParentSize>
+                          {parent => (
+                              <TheoryCKGraph
+                                  width={parent.width}
+                                  height={300}
+                                  parentRef={parent.ref}
+                              />
+                          )}
+                      </ParentSize>
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>      
+          </Grid.Column>
           <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
                 <Card fluid>
                     <Card.Content>
@@ -367,6 +387,7 @@ class App extends  Component<Props, State> {
                     </Card.Content>
                   </Card>      
           </Grid.Column>
+          
         </Grid.Row>
       </Grid>
     );
