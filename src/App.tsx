@@ -13,6 +13,8 @@ import SixThinkingHatsGraph from './components/SixThinkingHatsGraph'
 import WhysGraph from './components/WhysGraph'
 import BioStatGvMatrix from './components/BioStatGvMatrix'
 import TheoryCKGraph from './components/TheoryCKGraph'
+import TrochimAnalysisMatrix from './components/TrochimAnalysisMatrix'
+import SystematicLiteratureReviewGraph from './components/SystematicLiteratureReviewGraph'
 import {ParentSize} from '@vx/responsive'
 
 interface Props{
@@ -90,16 +92,66 @@ class App extends  Component<Props, State> {
                 {/*<p><b>Example:</b> Need to demonstrate the feasability, utility and usability <i>in situ</i> of new form factors for Shape-Changing Interfaces.
                 </p>*/}
           </Grid.Column>
+          
+          <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
+                <Card fluid>
+                    <Card.Content>
+                      <Card.Header>SWOT Analysis
+                      </Card.Header>
+                      <Card.Meta>George Albert Smith and C Roland Christiensen (1960)</Card.Meta>
+                      <Card.Description>
+                      <ParentSize>
+                          {parent => (
+                              <SwotAnalysisMatrix 
+                                  width={parent.width}
+                                  height={300}
+                                  parentRef={parent.ref}
+                              />
+                          )}
+                      </ParentSize>
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>      
+          </Grid.Column>
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
                     3. Question
                   </Header.Content>
                   <Header.Subheader>
-                    Could you give answers to a challenge e.g. in regards to a societal issue?
+                    Could you answer the challenge e.g. in regards to a societal issue?
                   </Header.Subheader>
                 </Header>
           </Grid.Column>
+          
+          <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
+                <Card fluid>
+                    <Card.Content>
+                      <Card.Header>Systematic Literature Review : PRISMA statement
+                      </Card.Header>
+                      <Card.Meta>British Design Council (2009)</Card.Meta>
+                      <Card.Description>
+                      <ParentSize>
+                          {parent => (
+                              <SystematicLiteratureReviewGraph 
+                                  width={parent.width}
+                                  height={300}
+                                  parentRef={parent.ref}
+                              />
+                          )}
+                      </ParentSize>
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>      
+          </Grid.Column>
+          <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
+                <Header as="h2">
+                  <Header.Content>
+                    4. State of the Art
+                  </Header.Content>
+                </Header>
+          </Grid.Column>
+          
           <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
                 <Card fluid>
                     <Card.Content>
@@ -123,7 +175,7 @@ class App extends  Component<Props, State> {
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
-                    7. Hypothesis & Prediction
+                    4. Hypothesis
                   </Header.Content>
                   <Header.Subheader>
                   </Header.Subheader>
@@ -270,6 +322,16 @@ class App extends  Component<Props, State> {
                     </Card.Content>
                   </Card>      
           </Grid.Column>
+          
+          <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
+                <Header as="h2">
+                  <Header.Content>
+                    5. Prediction
+                  </Header.Content>
+                  <Header.Subheader>
+                  </Header.Subheader>
+                </Header>
+          </Grid.Column>
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
@@ -287,6 +349,26 @@ class App extends  Component<Props, State> {
                   <Header.Subheader>
                   </Header.Subheader>
                 </Header>
+          </Grid.Column>
+          <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='center'>
+                <Card fluid>
+                    <Card.Content>
+                      <Card.Header>Descriptive Statistics Matrix
+                      </Card.Header>
+                      <Card.Meta></Card.Meta>
+                      <Card.Description>
+                      <ParentSize>
+                          {parent => (
+                              <TrochimAnalysisMatrix
+                                  width={parent.width}
+                                  height={300}
+                                  parentRef={parent.ref}
+                              />
+                          )}
+                      </ParentSize>
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>      
           </Grid.Column>
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='center'>
                 <Card fluid>
@@ -309,26 +391,6 @@ class App extends  Component<Props, State> {
                   </Card>      
           </Grid.Column>
 
-          <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
-                <Card fluid>
-                    <Card.Content>
-                      <Card.Header>SWOT Analysis
-                      </Card.Header>
-                      <Card.Meta>George Albert Smith and C Roland Christiensen (1960)</Card.Meta>
-                      <Card.Description>
-                      <ParentSize>
-                          {parent => (
-                              <SwotAnalysisMatrix 
-                                  width={parent.width}
-                                  height={300}
-                                  parentRef={parent.ref}
-                              />
-                          )}
-                      </ParentSize>
-                      </Card.Description>
-                    </Card.Content>
-                  </Card>      
-          </Grid.Column>
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
