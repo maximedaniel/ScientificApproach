@@ -150,7 +150,7 @@ class BrainWritingGraph extends  Component<Props, State> {
         {from: 6, to: 8, text:'DELIVER', angle:45},
         {from: 7, to: 8, text:'', angle:0}
     ]
-    var getNodeFromId = (nodeId) => nodes.filter((node) => node.id === nodeId)[0];
+    var getNodeFromId= (nodeId) => nodes.filter((node) => node.id === nodeId)[0];
 
     svg.selectAll()
     .data(links)

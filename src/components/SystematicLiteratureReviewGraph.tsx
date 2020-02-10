@@ -34,8 +34,7 @@ class SystematicLiteratureReviewGraph extends  Component<Props, State> {
         {id:5, x:width*0.542, y:height*0.71, fillColor:'#ffffff', strokeColor:'#f7931e', textAnchor:'start', header:'Analysis', subheader: 'Extract evidence from the selected papers.'},
         {id:6, x:width*0.571, y:height*0.85, fillColor:'#ffffff', strokeColor:'#f7931e', textAnchor:'end',  header:'Synthesis', subheader: 'Structure evidence in order to draw conclusions.'},
         {id:7, x:width*0.6, y:height*1, fillColor:'#ffffff', strokeColor:'#f7931e',  textAnchor:'start', header:'Process Monitoring', subheader: 'Ensure process is repeatable & complete.'},
-        ]
-    
+        ]    
     var getNodeFromId = (nodeId) => nodes.filter((node) => node.id === nodeId)[0];
 
     var links = [

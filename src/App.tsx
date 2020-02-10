@@ -144,14 +144,6 @@ class App extends  Component<Props, State> {
                     </Card.Content>
                   </Card>      
           </Grid.Column>
-          <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
-                <Header as="h2">
-                  <Header.Content>
-                    4. State of the Art
-                  </Header.Content>
-                </Header>
-          </Grid.Column>
-          
           <Grid.Column width={8} style={{paddingTop:'1rem'}} textAlign='center'>
                 <Card fluid>
                     <Card.Content>
@@ -175,7 +167,7 @@ class App extends  Component<Props, State> {
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
-                    4. Hypothesis
+                    5. Hypothesis
                   </Header.Content>
                   <Header.Subheader>
                   </Header.Subheader>
@@ -326,18 +318,23 @@ class App extends  Component<Props, State> {
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
-                    5. Prediction
+                    6. Design
                   </Header.Content>
                   <Header.Subheader>
+                    Biomimetism, Persona, Scenario, User story, UserBoarding, StoryTelling
+                    Sketchnoting, Sketching, Simulating, Rapid prototyping, Iterative prototyping
                   </Header.Subheader>
                 </Header>
           </Grid.Column>
+
           <Grid.Column width={16} style={{paddingTop:'1rem'}} textAlign='left'>
                 <Header as="h2">
                   <Header.Content>
-                    8. Experimentation
+                    7. Experimentation
                   </Header.Content>
-                  <Header.Subheader>
+                  <Header.Subheader> 
+                    Questionnaire (New Ecological Paradigm (NEP), User Experience Questionnaire (UEQ-S), Product Emotion (PrEmo), System Usability Scale (SUS), User experience (AttrakDiff), Single Ease Question (SEQ), NASA Task Load Index (NASA-TLX)
+                    Semi-structured Interview 
                   </Header.Subheader>
                 </Header>
           </Grid.Column>
